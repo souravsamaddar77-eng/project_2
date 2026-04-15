@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Quiz - Quiz Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="ambient-glow ambient-one" aria-hidden="true"></div>
+<div class="ambient-glow ambient-two" aria-hidden="true"></div>
+
+<div class="app-shell">
+    <header class="top-bar reveal">
+        <div class="brand-block">
+            <h1>College Quiz</h1>
+            <p>Intermediate College Level Challenge</p>
+        </div>
+
+        <div class="header-actions">
+            <a class="action-btn nav-home-btn" href="index.html">Home</a>
+            <div class="score-board" aria-live="polite">
+                <span id="scoreValue">Score 0 / 10</span>
+                <span id="progressValue">Question 1 / 10</span>
+            </div>
+            <button id="skipBtn" class="action-btn" type="button">Skip</button>
+        </div>
+    </header>
+
+    <main class="quiz-card reveal">
+        <p id="statusLine" class="status-line">Preparing your attempt...</p>
+        <h2 id="questionText">Loading question...</h2>
+        <div id="optionsGrid" class="options-grid"></div>
+
+        <div class="card-footer">
+            <button id="newAttemptBtn" class="new-attempt-btn hidden" type="button">Start New Attempt</button>
+        </div>
+    </main>
+
+    <footer class="site-footer reveal compact-footer">
+        <p>Practice smart. Attempt often. Improve continuously.</p>
+    </footer>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
